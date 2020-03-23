@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>{% block title %}{% endblock %}</title>
+    {% include "includes/head.html" %}
+    {% block css %}{% endblock %}
+    </head>
+<body id="page-top">
+    {% include "includes/navbar.html" %}
+    {% block body %}
+    {% endblock %}
+
+    <!-- {% include "includes/footer_copyright.html" %} -->
+    {% include "includes/footer.html" %}
+    {% include "includes/footer_scripts.html" %}
+
+
+
+</body>
+</html>
